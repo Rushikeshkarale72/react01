@@ -1,0 +1,59 @@
+.card {
+    width: 100%;
+    height: 30rem;
+    margin: 2%;
+    display: flex;
+  }
+  .left {
+    /* border: 1px solid black; */
+    width: 50%;
+    background-color: chocolate;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .left:hover {
+    background-color: orchid;
+  }
+  .left img {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px 0px 0px 0px;
+  }
+  .left h2 {
+    margin: 0;
+    color: white;
+    text-align: center;
+  }
+  .right {
+    width: 50%;
+    padding: 1%;
+    background-color: lightgoldenrodyellow;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .right h1 {
+    color: olive;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .right ol {
+    color: rgb(95, 91, 91);
+  }
+  .right ol li::marker {
+    color: black;
+  }
+  .navigation {
+    text-align: center;
+  }
+  .navigation a {
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 2%;
+    font-weight: bolder;
+  }
+  .navigation a:hover {
+    background-color: chocolate;
+  }
+  
