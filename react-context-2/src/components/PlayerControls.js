@@ -17,14 +17,14 @@ function PlayerControls() {
           <p>{music.currentTrackName}</p>
         </div>
         <div>
-          <button className="button has-text-light has-background-grey-dark">
+          <button className="btn3">
             <FontAwesomeIcon
               icon={faStepBackward}
               onClick={music.playPreviousTrack}
             />
           </button>
           <button
-            className="button has-text-light has-background-grey-dark"
+            className="btn4"
             onClick={music.togglePlay}
           >
             {music.isPlaying ? (
