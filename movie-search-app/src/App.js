@@ -1,14 +1,20 @@
-import './App.css';
-import Movies from './Movies'
-import Search from './Search';
 
+import "./App.css";
+import Search from "./Search";
 function App() {
-  return (
-    <div>
-      <Movies />
-      <Search />
+
+
+    
+    return (
+     <div className="main">
+      <div className="heading">
+        <h1>HOOKED</h1>
+      </div>
+      <div className="components">
+        <Search/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
