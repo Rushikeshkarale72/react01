@@ -108,7 +108,9 @@ export default function () {
           checkAnswer={checkAnswer}
         />
       ) : (
-        <div>Quiz Ended</div>
+        <div>
+          <h1>Quiz Ended</h1>
+          </div>
       )}
     </div>
   );
