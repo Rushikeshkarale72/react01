@@ -31,6 +31,7 @@ function App() {
   return (
     <MusicContext.Provider value={[state, setState]}>
       <div className="container">
+        <h1>Music Player</h1>
         <TrackList />
         <PlayerControls />
       </div>

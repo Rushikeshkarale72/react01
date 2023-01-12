@@ -15,25 +15,36 @@ code {
 
 @media screen and (min-width: 600px) {
   .container {
-    padding-top: 50px;
-    padding-left: 50px;
+    text-align: center;
+    padding-left: 400px;
     width: 600px ;
   }
 }
 .btn1{
+ text-align: center;
  background-color: gray;
  padding-left: 250px;
-
+ border: 2px solid rgb(2, 2, 2);
+ padding: 50px;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 4px 5px #5a5a5a9d;
 
 }
 
 .box {
+  background-color: #dddbdb;
   display: flex ;
   align-items: center;
+  border: 1px solid rgb(3, 2, 2);
+  padding: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 5px #888888;
 }
 
 .song-title {
-  margin-left: 200px;
+  margin-left: 150px;
 }
 
 .controls {
