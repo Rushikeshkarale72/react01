@@ -1,6 +1,5 @@
 import QuizQues from "./QuizQues";
 import { useState, useEffect } from "react";
-
 export default function () {
   let dataset = [
     {
@@ -34,13 +33,10 @@ export default function () {
     let currentIndex = array.length,
       randomIndex;
 
-    // While there remain elements to shuffle.
     while (currentIndex !== 0) {
-      // Pick a remaining element.
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
 
-      // And swap it with the current element.
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex],
         array[currentIndex]
@@ -51,7 +47,6 @@ export default function () {
   }
 
   useEffect(() => {
-    // Random Ordering
     shuffle(dataset);
     setCurrentQues({
       data: dataset[0],
@@ -71,29 +66,22 @@ export default function () {
   const checkAnswer = (value) => {
     setTimeout(() => {
       if (currentQues.data.anwser === value) {
-        //Letting us our status of choosen option
         alert("Your Answer Is Correct");
-        //Updating Score
         setScore((prevValue) => prevValue + 5);
-        //Keeping Record of each question submision
         setSubmission((prevValue) => {
           prevValue.push(true);
           return prevValue;
         });
       } else {
-        //Letting us our status of choosen option
         alert("Your Answer Is Incorrect");
-        //Keeping Record of each question submision
         setSubmission((prevValue) => {
           prevValue.push(true);
           return prevValue;
         });
       }
-      // Is Quiz End
       if (currentQues.s_no === dataset.length) {
         setQuizStatus(0);
       }
-      //Move to next question
       setCurrentQues((prevValue) => {
         return {
           data: dataset[prevValue.s_no],
