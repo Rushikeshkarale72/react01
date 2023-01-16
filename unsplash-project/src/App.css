@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.img-div{
+  position: relative;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.image{
+  width: 240px;
+  height: 300px;
+}
+a{
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+}
+.download:hover{
+  color: rgb(0, 0, 0);
+}
+a:hover img{
+  transform: scale(1.1);
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 200px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  left: 0;
+}
+.user{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 18;
+  font-weight: 600;
+}
+.desc{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: rgb(224, 224, 224);
+  font-size: 16px;
+  font-weight: 600;
+
+}
